@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pasadena City College Law Journal</title>
+<meta name="description" content="The Pasadena City College Law Journal: student essays on law and policy, written, edited, and published by PCC students.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚖️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Archivo+Narrow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#E7EAEF; --leaf:#FCFCFB; --ink:#151A21; --ink-2:#4E5A67; --ink-3:#7C8794;
+  --rule:#C6CCD5; --rule-soft:#DDE2E8; --seal:#8E1F31; --brass:#7E6526;
+  --shadow:0 1px 0 rgba(21,26,33,.06), 0 12px 28px -18px rgba(21,26,33,.35);
+  --serif:"Spectral",Iowan Old Style,Palatino,Georgia,serif;
+  --sans:"Archivo Narrow",Helvetica Neue,Arial,sans-serif;
+  color-scheme:light dark;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#11151A; --leaf:#1A2027; --ink:#E6E9ED; --ink-2:#A3AEBA; --ink-3:#7C8794;
+    --rule:#2C353E; --rule-soft:#232B33; --seal:#CE5C6F; --brass:#C2A45E;
+    --shadow:0 0 0 1px rgba(255,255,255,.04), 0 18px 40px -26px rgba(0,0,0,.9);
+  }
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:1.2rem}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--serif);font-size:1.0625rem;line-height:1.62}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--seal);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+
+.wrap{max-width:52rem;margin:0 auto;padding:0 1.25rem 5rem}
+
+header.masthead{padding:2.6rem 0 0}
+.school{font-family:var(--sans);font-size:.94rem;letter-spacing:.14em;font-weight:600;color:var(--seal);margin:0 0 .35rem;text-transform:uppercase}
+h1{font-family:var(--serif);font-weight:500;font-size:clamp(2.35rem,7.5vw,4.15rem);line-height:.95;letter-spacing:-.022em;margin:0}
+.rules{margin:1.05rem 0 .9rem;border-top:3px solid var(--seal);border-bottom:1px solid var(--seal);height:5px}
+.tagline{font-style:italic;color:var(--ink-2);font-size:1.1rem;margin:0 0 1.6rem;max-width:34rem}
+
+nav.jump{display:flex;flex-wrap:wrap;gap:.1rem;margin:0 0 2.6rem;border-bottom:1px solid var(--rule)}
+nav.jump a{font-family:var(--sans);font-size:.95rem;font-weight:500;color:var(--ink-2);text-decoration:none;padding:.5rem .85rem .45rem;margin-bottom:-1px;border-bottom:2px solid transparent}
+nav.jump a:hover{color:var(--ink);border-bottom-color:var(--seal)}
+
+section{margin:3.2rem 0 0}
+.section-head{font-family:var(--sans);font-weight:600;font-size:1rem;letter-spacing:.02em;margin:0 0 1.1rem;padding-bottom:.4rem;border-bottom:1px solid var(--rule)}
+p{margin:0 0 1.05rem;max-width:38rem}
+.lede{font-size:1.15rem;color:var(--ink);max-width:40rem}
+
+.cta-row{display:flex;flex-wrap:wrap;gap:.7rem;align-items:center;margin:1.5rem 0 0}
+.btn{font-family:var(--sans);font-size:.95rem;font-weight:600;letter-spacing:.01em;background:var(--seal);color:#fff;border:1px solid var(--seal);padding:.62rem 1.15rem;text-decoration:none;display:inline-block}
+.btn:hover{background:color-mix(in srgb,var(--seal) 86%,#000)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--rule)}
+.btn.ghost:hover{background:var(--leaf);border-color:var(--ink-3)}
+.note{font-family:var(--sans);font-size:.85rem;color:var(--ink-3);max-width:34rem;margin-top:.7rem;line-height:1.5}
+
+ol.steps{list-style:none;counter-reset:step;margin:0;padding:0;max-width:38rem}
+ol.steps li{counter-increment:step;position:relative;padding:0 0 1.35rem 2.6rem;border-left:1px solid var(--rule-soft);margin-left:.5rem}
+ol.steps li:last-child{padding-bottom:0}
+ol.steps li::before{content:counter(step);position:absolute;left:-.72rem;top:0;width:1.4rem;height:1.4rem;border-radius:50%;background:var(--leaf);border:1px solid var(--seal);color:var(--seal);font-family:var(--sans);font-weight:600;font-size:.78rem;display:flex;align-items:center;justify-content:center}
+ol.steps h3{font-size:1.05rem;font-weight:600;margin:0 0 .3rem}
+ol.steps p{margin:0;font-size:.98rem;color:var(--ink-2)}
+
+.masthead-box{background:var(--leaf);box-shadow:var(--shadow);padding:1.6rem 1.8rem;max-width:36rem}
+dl.roster{margin:0;display:grid;grid-template-columns:auto 1fr;gap:.5rem 1.4rem;font-family:var(--sans);font-size:.95rem}
+dl.roster dt{color:var(--ink-3)}
+dl.roster dd{margin:0}
+.editme{color:var(--brass);font-style:italic}
+
+.colophon{margin:4.5rem 0 0;padding-top:1.2rem;border-top:1px solid var(--rule);font-size:.9rem;color:var(--ink-3);line-height:1.55}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="masthead">
+    <p class="school">Pasadena City College</p>
+    <h1>Law Journal</h1>
+    <div class="rules"></div>
+    <p class="tagline">Student essays on law and policy — written, reviewed, and published by PCC students.</p>
+  </header>
+
+  <nav class="jump" aria-label="Page sections">
+    <a href="#about">About</a>
+    <a href="#read">Read &amp; submit</a>
+    <a href="#process">How it works</a>
+    <a href="#masthead">Masthead</a>
+  </nav>
+
+  <section id="about">
+    <h2 class="section-head">About the Journal</h2>
+    <p class="lede">The Journal publishes student writing on any legal question worth arguing about — a
+      case that came out wrong, a statute nobody reads, a problem in the courts or the classroom. Every
+      piece is written by a PCC student and shaped by student editors before it appears in a volume.</p>
+    <p>Membership is open to any PCC student. You don't need to be pre-law, and you don't need to have
+      published anything before — you need a question and the patience to revise it.</p>
+  </section>
+
+  <section id="read">
+    <h2 class="section-head">Read the current volume, or submit your own essay</h2>
+    <p>The Journal itself — the table of contents, the essays, and the submission and editing tool — lives
+      at the link below. Sign in with your PCC Claude account to read what's published, send in a draft,
+      or leave an editorial note on someone else's work.</p>
+    <div class="cta-row">
+      <a class="btn" href="https://claude.ai/artifact/RpenECUzcXjoLjhvMHPksX" target="_blank" rel="noopener">Open the Journal</a>
+    </div>
+    <p class="note">This link opens the working journal. Reading the full text and submitting or editing
+      an essay requires signing in with an account in the PCC organization.</p>
+  </section>
+
+  <section id="process">
+    <h2 class="section-head">How a piece gets published</h2>
+    <ol class="steps">
+      <li><h3>Write a draft</h3><p>Start in the Journal's editor. Save as often as you like — nothing is
+        visible to anyone else until you send it in.</p></li>
+      <li><h3>Send it to the editors</h3><p>When it's ready, submit it. It joins the editorial queue for
+        student editors to read.</p></li>
+      <li><h3>Revise with feedback</h3><p>Editors leave notes in the margin — on a claim that needs a
+        citation, a paragraph that isn't landing, a counterargument worth answering. You revise and
+        resubmit as many times as it takes.</p></li>
+      <li><h3>Publication</h3><p>Once the editors are satisfied, the essay is published into the current
+        volume with a citation and a place in the table of contents.</p></li>
+    </ol>
+  </section>
+
+  <section id="masthead">
+    <h2 class="section-head">Masthead</h2>
+    <div class="masthead-box">
+      <dl class="roster">
+        <dt>Editor-in-Chief</dt><dd class="editme">[Name]</dd>
+        <dt>Faculty Advisor</dt><dd class="editme">[Name]</dd>
+        <dt>Meets</dt><dd class="editme">[Day, time, room]</dd>
+        <dt>Contact</dt><dd class="editme">[club email]</dd>
+      </dl>
+    </div>
+    <p class="note">Replace the bracketed lines above with your club's real details before publishing this
+      page — edit them directly in <code>index.html</code>.</p>
+  </section>
+
+  <p class="colophon">Pasadena City College Law Journal. Essays are written and reviewed by PCC students.</p>
+</div>
+</body>
+</html>
